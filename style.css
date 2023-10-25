@@ -29,6 +29,18 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
     left: calc(50% - 8px);
     bottom: -8px;
 }
+.elementor-26686 .elementor-element.elementor-element-423dbcd .e--pointer-underline .current-menu-ancestor .elementor-item::after,
+.elementor-26686 .elementor-element.elementor-element-9b8b311 .e--pointer-underline .current-menu-ancestor .elementor-item::after,
+.elementor-26686 .elementor-element.elementor-element-21fac2a .e--pointer-underline .current-menu-ancestor .elementor-item::after {
+    opacity: 1.0;
+    opacity: 1;
+    height: 16px;
+    width: 16px;
+    border-radius: 100em;
+    left: calc(50% - 8px);
+    bottom: -8px;
+    background: #ed1c24;
+}   
 
 /* Header fixo alternativo */
 .elementor-element-d729c8d.elementor-sticky {
@@ -154,7 +166,21 @@ div[vw] [vw-plugin-wrapper].active {
         max-width: 84px;
     }
 }
-
 .cmc-buttons-area .elementor-button-icon {
     color: var( --e-global-color-753c76a ); 
+}
+
+/* Heading animado */
+.elementor-headline.e-animated {
+    font-size: 2.125rem;
+}
+@media (max-width: 1024px) {
+    .elementor-headline.e-animated {
+        font-size: 2.0rem;
+    }
+}
+@media (max-width: 780px) {
+    .elementor-headline.e-animated {
+        font-size: 1.875rem;
+    }
 }
