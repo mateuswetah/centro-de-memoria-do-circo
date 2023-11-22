@@ -31,7 +31,7 @@ function cmc_scripts_styles() {
 		],
 		CMC_VERSION
 	);
-
+	wp_enqueue_style( 'cmc-header-buttons', get_stylesheet_directory_uri() . '/assets/css/tainacan-items-list.css', array(), '' );
 	wp_enqueue_script( 'cmc-header-buttons', get_stylesheet_directory_uri() . '/assets/js/header-buttons.js', array(), '', true );
 }
 add_action( 'wp_enqueue_scripts', 'cmc_scripts_styles', 20 );

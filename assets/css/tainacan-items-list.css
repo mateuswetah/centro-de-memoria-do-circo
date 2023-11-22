@@ -1,0 +1,92 @@
+/* Tainacan Gutenberg Blocks colors */
+:root {
+    --tainacan-block-primary: var( --e-global-color-753c76a, #ED1C24 );
+}
+.theme-items-list,
+body:not(.tainacan-admin-page) .tooltip,
+body:not(.tainacan-admin-page) .tainacan-modal,
+body:not(.tainacan-admin-page) .tainacan-dialog {
+    --tainacan-blue5: --e-global-color-primary: #9C0400;
+    --tainacan-secondary: var( --e-global-color-753c76a, #ED1C24 );
+    --tainacan-primary: #e8dddd;
+    --tainacan-font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    --tainacan-label-color: #333;
+    --tainacan-background-color: #f6f6f6;
+    --tainacan-item-background-color: #fff;
+    --tainacan-item-hover-background-color: #f6f6f6;
+    --tainacan-item-heading-hover-background-color: #f6f6f6;
+    --tainacan-one-column: 24px;
+    --tainacan-base-font-size: 1.125em;
+    --tainacan-input-border-radius: 3px;
+}   
+@media screen and (max-width: 980px) {
+    .theme-items-list,
+    body:not(.tainacan-admin-page) .tooltip,
+    body:not(.tainacan-admin-page) .tainacan-modal,
+    body:not(.tainacan-admin-page) .tainacan-dialog {
+        --tainacan-one-column: 16px;
+        --tainacan-base-font-size: 1em;
+    }
+}
+body:not(.tainacan-admin-page) .tainacan-modal .pagination-area,
+.theme-items-list .pagination-area {
+    border-top: 4px dotted var(--tainacan-input-border-color);
+}
+.tainacan-items-list-container {
+    background-color: #f6f6f6;
+}
+.tainacan-items-list-container .theme-items-list {
+    margin: 0 auto;
+    max-width: 1500px;
+    min-width: auto;
+}
+.tainacan-items-list-header {
+    background-color: var(--e-global-color-primary, #9C0400);
+    color: #fff;
+    display: flex;
+    position: relative;
+}
+.tainacan-items-list-header .elementor-shape svg {
+    height: 28px;
+}
+.tainacan-items-list-header .elementor-shape svg path.elementor-shape-fill {
+    fill: #f6f6f6;
+}
+.tainacan-items-list-header .tainacan-items-list-header--inner {
+    max-width: var(--container-max-width, 1280px);
+    margin: 56px auto 56px auto;
+}
+.tainacan-items-list-header .tainacan-items-list-header--inner h1,
+.tainacan-items-list-header .tainacan-items-list-header--inner p {
+    color: #fff;
+}
+.tainacan-items-list-header .tainacan-items-list-header--inner .tainacan-items-list-header-collections-link {
+    display: flex;
+    gap: 0.75rem;
+    font-weight: bold;
+    font-size: 1.35rem;
+}
+.tainacan-items-list-header .tainacan-items-list-header--inner .tainacan-items-list-header-collections-link a {
+    color: white;
+}
+.tainacan-items-list-header .tainacan-items-list-header--inner .tainacan-items-list-header-collections-link .elementor-icon {
+    font-size: 26px;
+}
+
+.theme-items-list .tainacan-records-container .tainacan-record {
+    background-color: var(--tainacan-item-background-color, #fff) !important;
+}
+.theme-items-list .tainacan-records-container .tainacan-record,
+.theme-items-list .tainacan-masonry-container .tainacan-masonry-item {
+    border: 5px solid var( --e-global-color-accent );
+    transition: border-color 0.4s ease-in-out;
+}
+.theme-items-list .tainacan-records-container .tainacan-record:hover,
+.theme-items-list .tainacan-masonry-container .tainacan-masonry-item:hover {
+    border: 5px solid var( --e-global-color-primary );
+}
+.theme-items-list .tainacan-records-container .tainacan-record .metadata-title p,
+.theme-items-list .tainacan-masonry-container .tainacan-masonry-item .metadata-title p {
+    font-weight: 500;
+    font-size: 1.125em !important;
+}
