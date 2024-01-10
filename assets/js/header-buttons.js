@@ -39,6 +39,7 @@ performWhenDocumentIsLoaded(() => {
     const floatingVLibrasButton = document.querySelector('[vw-access-button]');
     const floatingA11yButton = document.querySelector('.pojo-a11y-toolbar-toggle');
     const floatingGTranslateButton = document.querySelector('#gt_float_wrapper');
+    const floatingSharingButtons = document.querySelector('#botes-de-compartilhar-single');
 
     if ( scrollPosition < 230 ) {
         if ( floatingVLibrasButton ) floatingVLibrasButton.style.display = 'none';
@@ -46,6 +47,13 @@ performWhenDocumentIsLoaded(() => {
         if ( floatingA11yButton ) floatingA11yButton.style.display = 'none';
 
         if ( floatingGTranslateButton ) floatingGTranslateButton.style.display = 'none';
+    
+        if ( floatingSharingButtons ) 
+            floatingSharingButtons.style.top = '164px'
+
+    } else {
+        if ( floatingSharingButtons ) 
+            floatingSharingButtons.style.top = '64px';
     }
 
     window.addEventListener('scroll', function() {
@@ -63,6 +71,9 @@ performWhenDocumentIsLoaded(() => {
 
             if ( floatingGTranslateButton.style.display !== 'block' ) floatingGTranslateButton.style.display = 'block';
 
+            if ( floatingSharingButtons && floatingSharingButtons.style.top !== '64px' )
+                floatingSharingButtons.style.top = '64px';
+
         } else {
 
             if ( floatingVLibrasButton.style.display !== 'none' ) floatingVLibrasButton.style.display = 'none';
@@ -71,6 +82,8 @@ performWhenDocumentIsLoaded(() => {
 
             if ( floatingGTranslateButton.style.display !== 'none' ) floatingGTranslateButton.style.display = 'none';
 
+            if ( floatingSharingButtons && floatingSharingButtons.style.top !== '164px' ) 
+                floatingSharingButtons.style.top = '164px';
         }
     
 

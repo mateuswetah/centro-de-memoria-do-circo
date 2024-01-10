@@ -45,6 +45,7 @@ body:not(.tainacan-admin-page) .tainacan-modal .pagination-area,
     color: #fff;
     display: flex;
     position: relative;
+    margin-bottom: 1rem;
 }
 .tainacan-items-list-header .elementor-shape svg {
     height: 28px;
@@ -53,18 +54,25 @@ body:not(.tainacan-admin-page) .tainacan-modal .pagination-area,
     fill: #f6f6f6;
 }
 .tainacan-items-list-header .tainacan-items-list-header--inner {
-    max-width: var(--container-max-width, 1280px);
-    margin: 56px auto 56px auto;
+    max-width: var(--container-max-width, 940px);
+    margin: 60px auto 60px auto;
+    text-align: center;
+}
+@font-face { font-family: "Rye"; src: url("https://memoriadocirco.org.br/wp-content/uploads/2023/12/Rye-Regular.ttf") format("truetype"); font-style: normal; font-weight: normal; font-display: auto; }
+.tainacan-items-list-header .tainacan-items-list-header--inner h1 {
+    font-family: "Rye", Sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+}
+.tainacan-items-list-header .tainacan-items-list-header--inner p {
+    font-family: "Fanwood Text", Sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
 }
 .tainacan-items-list-header .tainacan-items-list-header--inner h1,
 .tainacan-items-list-header .tainacan-items-list-header--inner p {
     color: #fff;
-}
-.tainacan-items-list-header .tainacan-items-list-header--inner .tainacan-items-list-header-collections-link {
-    display: flex;
-    gap: 0.75rem;
-    font-weight: bold;
-    font-size: 1.35rem;
+    text-align: center;
 }
 .tainacan-items-list-header .tainacan-items-list-header--inner .tainacan-items-list-header-collections-link a {
     color: white;
@@ -89,4 +97,69 @@ body:not(.tainacan-admin-page) .tainacan-modal .pagination-area,
 .theme-items-list .tainacan-masonry-container .tainacan-masonry-item .metadata-title p {
     font-weight: 500;
     font-size: 1.125em !important;
+}
+.tainacan-modal #filters-modal .modal-content,
+.theme-items-list #filters-modal .modal-content {
+    padding-left: 2rem !important;
+}
+
+/* Tainacan Item Page */
+.tainacan-item-page-container {
+    background-color: #f6f6f6;
+}
+.tainacan-item-page-information {
+    gap: var(--gap);
+    width: 100%;
+    max-width: min(100%,var(--container-max-width, 940px));
+    margin: 0 auto;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 100%;
+    margin-top: 3rem;
+}
+.tainacan-item-page-information h2,
+.tainacan-item-page-information h3,
+.tainacan-item-page-information h4,
+.tainacan-item-page-information h5,
+.tainacan-item-page-information h6 {
+    color: black;
+}
+.tainacan-item-page-information h2 {
+    font-size: 1.25rem;
+}
+.tainacan-item-page-information h3 {
+    font-size: 1.2rem;
+}
+.tainacan-item-page-information p,
+.tainacan-item-page-information a {
+    font-family: var( --e-global-typography-text-font-family ), Sans-serif;
+    font-size: 1.25rem;
+}
+.tainacan-item-page-navigation #item-single-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tainacan-item-page-information .tainacan-media-component {
+    --swiper-theme-color: var(--e-global-color-primary, #9C0400);
+    --swiper-navigation-size: 44px;
+    --tainacan-media-metadata-color: var(--tainacan-label-color, #373839);
+    --tainacan-media-background: var(--tainacan-background-color, transparent);
+    --tainacan-media-main-carousel-height: 50vh;
+    --tainacan-media-main-carousel-width: 100%;
+    --tainacan-media-thumbs-carousel-width: 100%;
+    --tainacan-media-thumbs-carousel-item-size: 126px;
+}
+.tainacan-item-page-information .tainacan-media-component .swiper-button-prev, 
+.tainacan-item-page-information .tainacan-media-component .swiper-button-next {
+    background-image: none;
+}
+.tainacan-item-page-information .pagination .has-small-thumbnail {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }

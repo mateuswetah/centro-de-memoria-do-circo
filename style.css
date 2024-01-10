@@ -122,7 +122,8 @@ div[vw] [vw-plugin-wrapper].active {
     padding: 2px 24px;
 }
 .elementor-shortcode .gtranslate_wrapper .gt_selector {
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 15px;
     text-transform: lowercase;
     border: none;
     background: none;
@@ -182,5 +183,44 @@ div[vw] [vw-plugin-wrapper].active {
 @media (max-width: 780px) {
     .elementor-headline.e-animated {
         font-size: 1.875rem;
+    }
+}
+
+/* Grade de bolinhas vermelhas alinhadas ao centro */
+.grade-bolinhas-centralizadas .elementor-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Breadcbrums */
+.breadcrumbs,
+.breadcrumbs a {
+    color: var(--e-global-color-41ec217, #f6f6f6);
+}
+.breadcrumbs a:hover
+.breadcrumbs a:focus {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Legenda fixa da galeria de imagens */
+.elementor-carousel-image-overlay:not(:empty) {
+    height: 2rem;
+    position: relative;
+    top: -2.5rem;
+    width: 100%;
+    border-radius: 0;
+    opacity: 0.9 !important;
+}
+
+/* Botões de compartilhar da single */
+#botes-de-compartilhar-single {
+    z-index: 9999;
+}
+@media screen and (max-width: 780px) {
+    #botes-de-compartilhar-single {
+        bottom: 3px;
+        top: unset !important;
     }
 }

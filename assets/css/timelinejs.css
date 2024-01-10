@@ -1,0 +1,47 @@
+.tl-timeaxis,
+.tl-timeaxis-background,
+.tl-timeaxis .tl-timeaxis-content-container {
+    height: 60px !important;
+}
+.tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-major .tl-timeaxis-tick {
+    font-size: 16px !important;
+    line-height: 54px !important;
+}
+.tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-minor .tl-timeaxis-tick {
+    font-size: 14px !important;
+    line-height: 36px !important;
+}
+.tl-timegroup .tl-timegroup-message {
+    color: #353535 !important;
+}
+.tl-menubar-button {
+    color: #9d0703;  
+}
+.tl-menubar-button:hover,
+.tl-menubar-button:focus-visible {
+    background-color: black;  
+    color: white;
+}
+.tl-timeline .tl-menubar {
+    box-shadow: 0 0 5px -3px black;
+}
+.tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline,
+.tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline p {
+    color: black;
+}
+.tl-timemarker .tl-timemarker-content-container {
+    width: 150px;
+}
+.tl-timemarker:hover .tl-timemarker-content-container.tl-timemarker-content-container-small,
+.tl-timemarker:focus .tl-timemarker-content-container.tl-timemarker-content-container-small {
+    width: max-content;
+}
+.tl-timemarker:hover .tl-timemarker-content-container,
+.tl-timemarker:focus .tl-timemarker-content-container {
+    background-color: #f9f9f9;
+    border-color: #c4aead;
+}
+.tl-timemarker:hover .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline,
+.tl-timemarker:focus .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline p {
+    color: #433;
+}
