@@ -27,6 +27,31 @@
             <?php tainacan_the_metadata_sections(); ?>
         </section>
 
+        <?php if ( tainacan_has_related_items() ): ?>
+            <section id="tainacan-related-items-section">
+                <h2 class="title-content-items" id="single-item-related-items-label">
+                    <?php echo __( 'Itens relacionados a este', 'cmc' ); ?>
+                </h2>
+                <div class="tainacan-content single-item-collection margin-two-column">
+                    <div class="single-item-collection--related-items justify-content-center">
+                        <div class="row">
+                        <?php 
+                            tainacan_the_related_items_carousel([
+                                // 'class_name' => 'mt-2 tainacan-single-post',
+                                // 'collection_heading_class_name' => 'title-content-items',
+                                'items_list_layout' => 'carousel',
+                                'collection_heading_tag' => 'h3',
+                                'carousel_args' => [
+                                    'max_items_per_screen' => 5
+                                ]
+                            ]);
+                        ?>
+                        </div>
+                    <div>
+                </div>
+            </section>
+        <?php endif; ?>
+
         <?php 
 
             $adjacent_links = tainacan_get_adjacent_item_links('small');

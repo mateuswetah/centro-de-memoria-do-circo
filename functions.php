@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-define( 'CMC_VERSION', '2.0.0' );
+define( 'CMC_VERSION', '2.0.2' );
 
 /**
  * Load child theme scripts & styles.

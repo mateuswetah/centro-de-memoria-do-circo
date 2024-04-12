@@ -45,3 +45,16 @@
 .tl-timemarker:focus .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline p {
     color: #433;
 }
+.tl-timeline h1,
+.tl-timeline h2,
+.tl-timeline h3,
+.tl-timeline h4,
+.tl-timeline h5,
+.tl-timeline h6 {
+    font-size: 38px;
+}
+.tl-timeline p {
+    font-size: 18px;
+    line-height: 1.4em;
+    font-weight: bold;
+}

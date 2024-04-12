@@ -163,3 +163,11 @@ body:not(.tainacan-admin-page) .tainacan-modal .pagination-area,
     align-items: center;
     gap: 0.5rem;
 }
+
+#tainacan-related-items-section .wp-block-button__link,
+#tainacan-related-items-section .wp-block-button__link:hover,
+#tainacan-related-items-section .wp-block-button__link:focus {
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+}
